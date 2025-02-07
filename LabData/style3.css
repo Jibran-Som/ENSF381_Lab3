@@ -18,3 +18,56 @@
     display: block;
     margin: 0 auto 10px;
 }
+
+.navbar{  
+    display: flex;
+    flex-direction: row;
+    color: #333;
+}
+
+.item2 {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+
+.item3 {
+    flex: 1;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 30px;
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+
+.item3:hover{
+    background-color: #bdbbbb;
+
+}
+
+.item3:hover .dropdown{
+    display: block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+}
+
+.dropdown div{
+    padding: 10px;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown div:hover{
+    background-color: #f1f1f1;
+}
+
